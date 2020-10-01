@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    scroll-behavior: smooth;
+    
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+/* i{
+    color: #2fccd0;
+} */
+
+.extra-div h2, .servicediv h2{
+    font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(10, 10, 10,0.4),rgba(158, 158, 158, 0.404)), url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(100% 0%,100% 75%,50% 100%,0 75%,0 0);
+    position: relative;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0%;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right ,  rgba(10, 10, 10, 0.425) 0%,rgba(10, 10, 10, 0.589) 0%, rgba(10, 10, 10) 100%);
+}
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0%;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right ,  rgba(10, 10, 10, 0.425) 0%,rgba(10, 10, 10, 0.589) 0%, rgba(10, 10, 10) 100%);
+
+}
+
+.nav-item a{
+    color: white !important;
+    font-weight: bold;
+}
+.nav-item a:hover{
+    background-color: white !important; 
+    color: rgb(44,44,44) !important;
+    border-radius: 20px;
+}
+.navbar-toggler-icon i{
+    color: white !important;
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* -ms-translate: translate(-50%,-50%); */
+    -webkit-transform: translate(-50%,-50%);
+}
+
+.header-buttons a{
+    border: 2px solid white;
+    border-radius: 100px;
+    margin: 0px 5px;
+    padding: 12px 25px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: cursive;
+    
+    
+    
+}
+
+.header-buttons a:hover{
+    color: rgb(44, 44, 44);
+    
+    border-color: rgb(44,44,44);
+    font-weight: bolder;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.349);
+
+}
+
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: rgb(255, 255, 255);
+}
+
+
+.header-extradiv{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+    
+    
+}
+.extra-div{
+    
+    background: white;
+    border: medium none;
+    padding: 10px !important;
+    border-radius: 5px;
+    transition: 0.3;
+}
+.extra-div:hover{
+
+    box-shadow: 0 0 20px rgba(0, 0, 0,0.3);
+    transform: translateY(-25px);
+    cursor: pointer;
+}
+
+.extra-div i{
+    color: rgb(44,44,44);
+
+}
+
+/* ******what do we offer-start******** */
+
+.serviceoffers{
+    background: #f7f7f9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.headings{
+    margin-bottom: 50px;
+}
+
+.headings h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+.names h1{
+    color: #2e2e2e;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.service-icons{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.progress{
+    height: 0.6rem !important;
+    margin-bottom: 25px !important;
+}
+
+
+/* ******what do we offer-end******** */
+
+/* ******pricing START******** */
+
+.pricing{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    position: relative;
+    
+}
+
+.pricing::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0%;
+    z-index: -1;
+    background: linear-gradient(160deg , rgba(10, 10, 10, 0.74) 50%, white 50%);
+    
+
+}
+
+.money{
+    font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+.card{
+    transition: 0.4s ease;
+    /* border: 1px solid rgba(0, 0, 0, 0.5) !important; */
+}
+.card-header{
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: white;
+    padding: 20px 0px !important;
+    color: #4b4a4a;
+
+
+
+}
+.card-body{
+    padding: 30px 0px !important;
+}
+.card-body li{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+.card-footer{
+    background: white !important;
+    padding: 30px 0px !important;
+
+}
+
+.card-footer a{
+    border: 2px solid rgb(44,44,44);;
+    border-radius: 100px;
+    margin: 0px 5px;
+    padding: 12px 25px;
+    color: rgba(44,44,44);
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: cursive;
+
+    
+    
+    
+}
+
+.card-footer a:hover{
+    color: white;
+    
+    border-color: rgb(44,44,44);
+    font-weight: bolder;
+    text-decoration: none;
+    background: rgb(44,44,44);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.349);
+
+}
+.card:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0,0.3);
+    transform: translateY(-25px);
+    cursor: pointer;
+}
+
+.card:hover .card-header, .card:hover .money {
+    color: rgb(44,44,44);
+}
+
+.card:hover .card-footer a{
+    color: white;
+    
+    border-color: rgb(44,44,44);
+    font-weight: bolder;
+    text-decoration: none;
+    background: rgb(44,44,44);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.349);
+
+}
+
+/* ******pricing END******** */
+/* ******contact start******** */
+.contact{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.container .container-send{
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+.contact .btn{
+   
+    border: 2px solid rgb(44,44,44);
+    border-radius: 100px;
+    margin: 0px 5px;
+    padding: 12px 25px;
+    color: rgba(44,44,44) !important;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: cursive;
+}
+.contact .btn:hover{
+    color: white !important;
+    border-color: rgb(44,44,44);
+    font-weight: bolder;
+    text-decoration: none;
+    background: rgb(44,44,44);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.349);
+}
+/* ******contact END******** */
+
+/* ******footer start******** */
+.footer-div{
+    height: auto;
+    width: 100%;
+    padding: 30px 0px;
+    background-color: rgb(73,73,73);
+    position: relative;
+}
+.footer-div li i{
+    text-decoration: none !important;
+    color: rgb(215, 196, 176) !important;
+    margin: 0px 40px;
+}
+.footer-div li i:hover,.footer-div p a:hover{
+    text-decoration: none !important;
+    color: rgb(44,44,44) !important;
+    cursor: pointer;
+}
+.footer-div p,.footer-div p a{
+    color: rgb(255, 255, 255,0.9);
+}
+
+/* ******footer END******** */
+
